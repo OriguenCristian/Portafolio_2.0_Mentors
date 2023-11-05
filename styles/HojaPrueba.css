@@ -1,0 +1,10 @@
+ /* controla la duracion de la animacion */
+ animation-duration: 15s;
+ /* controla las veces de repeticion de la animacion */
+ animation-iteration-count: infinite; 
+ /* Controla el sentido de ejecucion de la animacion */
+ animation-direction: alternate;
+ /* define lo que sucede antes y despues de la animacion */
+ /* animation-fill-mode: both; */
+ /* controla el tiempo que tarda la animacion en iniciar */
+ /* animation-delay: 1s; */

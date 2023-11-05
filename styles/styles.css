@@ -1,0 +1,117 @@
+header {
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.menu {
+  margin: 1rem;
+}
+.menu__list {
+  margin: 1rem;
+  list-style-type: none;
+  padding: 0px;
+}
+.list__item {
+  display: inline-block;
+}
+.list__item a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #0c0e1b;
+  font-style: italic;
+  font-weight: 300;
+}
+.logo img {
+  margin: 1rem;
+  width: 17rem;
+  height: 6rem;
+}
+
+/* aqui elementos de la seccion "intro" */
+.intro {
+  text-align: center;
+  padding: 2rem;
+  margin: 4rem;
+ 
+}
+.intro .titulo {
+  position: relative;
+  z-index: 1;
+}
+.intro h1 {
+  font-size: 3.5rem;
+  line-height: normal;
+}
+.intro p {
+  color: #000516;
+  text-align: center;
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  font-size: 1.32rem;
+  width: 500px;
+  margin: 0px auto;
+}
+/* cuadrados animdos  del inicio inician aqui */
+.cuadrado_animado {
+  width: 5rem;
+  height: 5rem;
+}
+.cuadrado__solido-uno {
+  background-color: #9d262e;
+  position: absolute;
+  top: 9rem;
+  left: 60%;
+  transition: all 1s linear;
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+}
+.cuadrado__solido-uno:hover {
+  transform: scale(.8);
+  border-radius: 0%;
+ 
+}
+.cuadrado__solido-dos {
+  background-color: #9d262e;
+  position: absolute;
+  top: 16rem;
+  left: 25%;
+  border-radius: 50%;
+  transition: all 1s linear;
+  width: 9rem;
+  height: 9rem;
+}
+.cuadrado__solido-dos:hover {
+  border-radius: 0%;
+  transform: scale(.8);
+}
+.cuadrado__borde-uno {
+  position: absolute;
+  top: 15rem;
+  left: 5rem;
+  border-radius: 50%;
+  border: solid 3px #9d262e50;
+  /* Agraga nombre a la propiedad para usar el kyeFrame */
+  animation: mover 15s infinite alternate ease-in-out;
+}
+@keyframes mover {
+  0% {
+    transform: translateX(25%);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+  100% {
+    border-radius: 0%;
+  }
+}
+
+.cuadrado__borde-dos {
+  border: solid 3px #9d262e50;
+  position: absolute;
+  top: 24rem;
+  left: 90%;
+  border-radius: 50%;
+  animation: mover 10s infinite alternate-reverse ease-in-out;
+}
