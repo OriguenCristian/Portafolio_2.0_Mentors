@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 header {
   width: 100vw;
   align-items: center;
@@ -37,7 +40,6 @@ header {
   text-align: center;
   padding: 2rem;
   margin: 4rem;
- 
 }
 .intro .titulo {
   position: relative;
@@ -67,12 +69,10 @@ header {
   height: 9rem;
 }
 .cuadrado__solido-uno:hover {
-  transform: scale(.8);
+  transform: scale(0.8);
   border-radius: 0%;
- 
 }
 .cuadrado__solido-dos {
-  
   background-color: #9d262e;
   position: absolute;
   top: 16rem;
@@ -84,7 +84,7 @@ header {
 }
 .cuadrado__solido-dos:hover {
   border-radius: 0%;
-  transform: scale(.8);
+  transform: scale(0.8);
 }
 /*Cudrados mobiles*/
 
@@ -99,7 +99,7 @@ header {
   /* Agraga nombre a la propiedad para usar el kyeFrame */
   animation: mover 15s infinite alternate ease-in-out;
 }
-.cuadrado__borde-cuatro{
+.cuadrado__borde-cuatro {
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -142,40 +142,97 @@ header {
   animation: mover 5s infinite alternate-reverse ease-in-out;
 }
 
-#intro-btn-contact{
-    width: 10rem;
-    border: none;
-    padding: auto;
-    height: 44px;
-    background-color:#9d262e50;
-    border-radius: 7px;
-    /* padding: 2rem; */
-    margin-top: 8rem
+#intro-btn-contact {
+  width: 10rem;
+  border: none;
+  padding: auto;
+  height: 44px;
+  background-color: #9d262e50;
+  border-radius: 7px;
+  /* padding: 2rem; */
+  margin-top: 8rem;
 }
 
-    /* seccion de Works */
-    .caja1{
-      height: 64.86488rem;
-      background: linear-gradient(180deg, rgba(157, 38, 45, 0.08) 5.1%, rgba(157, 38, 45, 0.00) 65.67%);
+/* seccion de Works */
 
+#works {
+  padding: 0rem 6rem;
+  background: linear-gradient(
+    180deg,
+    rgba(157, 38, 45, 0.08) 5.1%,
+    rgba(157, 38, 45, 0) 65.67%
+  );
+}
 
-    }
-
-.puntero-titulo{
+.puntero-titulo {
   width: 50px;
-  height: 50px; 
+  height: 50px;
   transform: rotate(-41.25deg);
   transform-origin: 0 0;
-  background: #9D262D;
+  background: #9d262d;
 }
-.puntero-titulo h4{
-text-align: center;
-font-family: Jost;
-font-size: 1.79688rem;
-font-style: italic;
-font-weight: 400;
-line-height: normal;
-text-decoration-line: strikethrough;
+.puntero-titulo h4 {
+  text-align: center;
+  font-family: Jost;
+  font-size: 1.79688rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: strikethrough;
   transform: rotate(44deg);
   transform-origin: 0 0;
 }
+.works-container{
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+.work_box {
+  background-color:black;
+  width: 250px;
+  height: 250px;
+}
+.box-one{
+  transition: all 1s linear; 
+  transform: rotate(-130.171deg);
+  position: relative;
+    left: 36%;
+    top: 5rem;
+}
+.box-one:hover{
+  scale: 1.7;
+  border-radius: 50%;
+}
+.box-two{
+  transition: all 1s linear; 
+  transform: rotate(-130.171deg);
+  position: relative;
+    left: 73%;
+    top: 2rem;
+}
+.box-two:hover{
+  scale: 1.7;
+  border-radius: 50%;
+}
+.box-three{
+  transition: all 1s linear; 
+  position: relative;
+    left: 35%;
+}
+.box-three:hover{
+  scale: 1.7;
+  border-radius: 50%;
+}
+.box-four{
+  transition: all 1s linear; 
+  position: relative;
+    top: -25.7rem;
+    left: 0%;
+}
+.box-four:hover{
+  scale: 1.7;
+  border-radius: 50%;
+}
+
