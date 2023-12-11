@@ -232,7 +232,12 @@ header {
     left: 0%;
 }
 .box-four:hover{
+
   scale: 1.7;
-  border-radius: 50%;
+  border-radius:50%;
+}
+.work_box img{
+  width: 250px;
+  height: 250px;
 }
 
