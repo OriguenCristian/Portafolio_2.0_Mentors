@@ -31,6 +31,9 @@ header {
 
 /* aqui elementos de la seccion "intro" */
 .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 2rem;
   margin: 4rem;
@@ -83,6 +86,8 @@ header {
   border-radius: 0%;
   transform: scale(.8);
 }
+/*Cudrados mobiles*/
+
 .cuadrado__borde-uno {
   width: 5rem;
   height: 5rem;
@@ -93,6 +98,17 @@ header {
   border: solid 3px #9d262e50;
   /* Agraga nombre a la propiedad para usar el kyeFrame */
   animation: mover 15s infinite alternate ease-in-out;
+}
+.cuadrado__borde-cuatro{
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 18rem;
+  left: 6rem;
+  border-radius: 50%;
+  border: solid 3px #9d262e50;
+  /* Agraga nombre a la propiedad para usar el kyeFrame */
+  animation: mover 6s infinite alternate ease-in-out;
 }
 @keyframes mover {
   0% {
@@ -126,8 +142,24 @@ header {
   animation: mover 5s infinite alternate-reverse ease-in-out;
 }
 
+#intro-btn-contact{
+    width: 10rem;
+    border: none;
+    padding: auto;
+    height: 44px;
+    background-color:#9d262e50;
+    border-radius: 7px;
+    /* padding: 2rem; */
+    margin-top: 8rem
+}
 
-/* seccion de Works */
+    /* seccion de Works */
+    .caja1{
+      height: 64.86488rem;
+      background: linear-gradient(180deg, rgba(157, 38, 45, 0.08) 5.1%, rgba(157, 38, 45, 0.00) 65.67%);
+
+
+    }
 
 .puntero-titulo{
   width: 50px;
