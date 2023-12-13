@@ -1,0 +1,22 @@
+@keyframes rotar {
+    0% {
+      transform: rotate(15deg);
+    }
+    50% {
+      transform: rotate(-15deg);
+    }
+    100%{
+  
+    }
+  }
+  @keyframes mover {
+    0% {
+      transform: translateX(25%);
+    }
+    50% {
+      transform: translateY(-25%);
+    }
+    100% {
+      border-radius: 0%;
+    }
+  }

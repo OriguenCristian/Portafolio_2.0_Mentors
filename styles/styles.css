@@ -110,17 +110,7 @@ header {
   /* Agraga nombre a la propiedad para usar el kyeFrame */
   animation: mover 6s infinite alternate ease-in-out;
 }
-@keyframes mover {
-  0% {
-    transform: translateX(25%);
-  }
-  50% {
-    transform: translateY(-25%);
-  }
-  100% {
-    border-radius: 0%;
-  }
-}
+
 .cuadrado__borde-dos {
   width: 5rem;
   height: 5rem;
@@ -186,58 +176,66 @@ header {
   
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-
+ 
 }
 .work_box {
   background-color:black;
   width: 250px;
   height: 250px;
+  
 }
 .box-one{
+  box-shadow: 9px 1px 20px -12px rgba(0,0,0,0.73);
+  background-image: url(/assets/imagen-encriptador-progect.png);
+  background-size: cover;
   transition: all 1s linear; 
-  transform: rotate(-130.171deg);
+  overflow: hidden;
   position: relative;
-    left: 36%;
-    top: 5rem;
+  left: 36%;
+  top: 5rem;
+  animation: rotar 10s infinite alternate-reverse ease-in-out;
 }
 .box-one:hover{
-  scale: 1.7;
-  border-radius: 50%;
+  scale: 1.2;
+  animation: none;
 }
+.info{
+  color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(31 , 31, 31, 0.9);
+  opacity: 0;
+  transition: 0.3s;
+}
+.info-titulo{
+  transition: 1s;
+  margin-left: -80px;
+}
+.box-one:hover .info-titulo{
+  margin-left: 80px;
+}
+.box-one:hover .info{
+  opacity: 1;
+}
+
+
 .box-two{
   transition: all 1s linear; 
-  transform: rotate(-130.171deg);
   position: relative;
     left: 73%;
     top: 2rem;
-}
-.box-two:hover{
-  scale: 1.7;
-  border-radius: 50%;
+    animation: rotar 15s infinite alternate-reverse ease-in-out;
 }
 .box-three{
   transition: all 1s linear; 
   position: relative;
     left: 35%;
-}
-.box-three:hover{
-  scale: 1.7;
-  border-radius: 50%;
+    animation: rotar 20s infinite alternate-reverse ease-in-out;
 }
 .box-four{
   transition: all 1s linear; 
   position: relative;
     top: -25.7rem;
     left: 0%;
+    animation: rotar 25s infinite alternate-reverse ease-in-out;
 }
-.box-four:hover{
-
-  scale: 1.7;
-  border-radius:50%;
-}
-.work_box img{
-  width: 250px;
-  height: 250px;
-}
-
