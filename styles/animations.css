@@ -1,3 +1,4 @@
+/* --------------MOVIMIENTOS ROTAR Y DESPLAZARSE INICIO Y WORCK----------- */
 @keyframes rotar {
     0% {
       transform: rotate(15deg);
@@ -19,4 +20,20 @@
     100% {
       border-radius: 0%;
     }
+  }
+  /* -------LINEA MENU NAVEGACION--------------- */
+  .list__item{
+    --thickness: .1em;
+    --strike: 0;
+    
+    background: linear-gradient(90deg, transparent, currentColor 0) no-repeat 
+                right center / calc(var(--strike) * 100%) var(--thickness);
+  
+    transition: background-size .4s ease;
+    font: 25px Arial;
+    padding: 0 .2em;
+  }
+  .list__item:hover {
+    --strike: 1; /* "1" means "true" (show the strike line) */
+    background-position-x: left;
   }

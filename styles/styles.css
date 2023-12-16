@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 html{
   scroll-behavior: smooth;
 }
@@ -110,7 +111,6 @@ header {
   /* Agraga nombre a la propiedad para usar el kyeFrame */
   animation: mover 6s infinite alternate ease-in-out;
 }
-
 .cuadrado__borde-dos {
   width: 5rem;
   height: 5rem;
@@ -131,7 +131,6 @@ header {
   border-radius: 50%;
   animation: mover 5s infinite alternate-reverse ease-in-out;
 }
-
 #intro-btn-contact {
   width: 10rem;
   border: none;
@@ -142,21 +141,18 @@ header {
   /* padding: 2rem; */
   margin-top: 8rem;
 }
-
-/* seccion de Works */
-
-#works {
-  padding: 0rem 6rem;
+/*------------------------------------ seccion de Works --------------------------------*/
+#works,#about,#contact{
+  padding: 3rem 6rem;
   background: linear-gradient(
     180deg,
     rgba(157, 38, 45, 0.08) 5.1%,
     rgba(157, 38, 45, 0) 65.67%
   );
 }
-
 .puntero-titulo {
-  width: 50px;
-  height: 50px;
+  width: 2rem;
+  height: 2rem;
   transform: rotate(-41.25deg);
   transform-origin: 0 0;
   background: #9d262d;
@@ -195,36 +191,49 @@ header {
   top: 5rem;
   animation: rotar 10s infinite alternate-reverse ease-in-out;
 }
-.box-one:hover{
-  scale: 1.2;
+.work_box:hover{
+  scale: 1.5;
   animation: none;
 }
 .info{
+  overflow: hidden;
+  text-align: center;
   color: whitesmoke;
   width: 100%;
   height: 100%;
+  padding: 3rem 0rem;
   background-color:rgba(31 , 31, 31, 0.9);
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.10s;
 }
-.info-titulo{
+.info-titulo, .info-description{
   transition: 1s;
-  margin-left: -80px;
+  margin-top: 300px;
+
 }
-.box-one:hover .info-titulo{
-  margin-left: 80px;
+.info-description{
+
+  padding: 1rem;
+  font-size: xx-small;
 }
-.box-one:hover .info{
+.work_box:hover .info-titulo, .info-description{
+  display: block;
+  margin: 0px auto;
+}
+.work_box:hover .info{
   opacity: 1;
+  
 }
-
-
 .box-two{
+  box-shadow: 9px 1px 20px -12px rgba(0,0,0,0.73);
+  background-image: url(/assets/ahoracadopage.jpeg);
+  background-position: center;
+  background-size: cover;
   transition: all 1s linear; 
   position: relative;
     left: 73%;
     top: 2rem;
-    animation: rotar 15s infinite alternate-reverse ease-in-out;
+    animation: rotar 9s infinite alternate-reverse ease-in-out;
 }
 .box-three{
   transition: all 1s linear; 
@@ -237,5 +246,86 @@ header {
   position: relative;
     top: -25.7rem;
     left: 0%;
-    animation: rotar 25s infinite alternate-reverse ease-in-out;
+    animation: rotar 8s infinite alternate-reverse ease-in-out;
+}
+/* ------------------------------------ABOUT---------------------------------------------- */
+#about{
+
+}
+.about-article .about-img{
+  height: 20rem;
+  padding:1rem;
+  width: 18rem;
+}
+.about-article{
+  display: flex;
+  column-gap: 3rem;
+  margin: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.about-descripcion{
+  color: #222221;
+  font-family: Jost;
+  background: #84827f60;
+  /* width: 60%; */
+  width: 20rem;
+  height: 20rem;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.fondo-container{
+  position: absolute;
+ z-index: -1;
+ width: 100%;
+ height: 100%;
+}
+.big-circulo__uno, .big-circulo__dos{
+  border-radius: 50%;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(157, 38, 45, 0.80);
+}
+.big-circulo__uno{
+  left: 50%;
+  top: 15rem;
+}
+.big-circulo__dos{
+  left: 65%;
+}
+.rectangulo_fondo{
+  top: 40rem;
+  position: absolute;
+  z-index: -1;
+}
+/* --------------------------------------------CONTACT------------------------- */
+.contac-text,.contact-iconos{
+  display: flex;
+    width: 100%;
+    height: 11rem;
+    justify-content: center;
+    align-items: center;
+}
+.contac-text p{
+  display: inline-grid;
+  justify-content: center;
+  color: #000;
+  font-family: Jost;
+  font-size: 1.4375rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-iconos img{
+  margin: 1rem;
+  transition: 1s;
+  width: 4rem;
+ height: 4rem;
+}
+.contact-iconos img:hover{
+ opacity: 3;
 }
