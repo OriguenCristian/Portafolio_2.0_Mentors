@@ -21,19 +21,30 @@
       border-radius: 0%;
     }
   }
+  @keyframes moverAbout {
+    0% {
+      transform: translateX(25%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    65%{
+        transform: rotateX('angle');
+    }
+  }
   /* -------LINEA MENU NAVEGACION--------------- */
   .list__item{
     --thickness: .1em;
     --strike: 0;
     
     background: linear-gradient(90deg, transparent, currentColor 0) no-repeat 
-                right center / calc(var(--strike) * 100%) var(--thickness);
+    right center / calc(var(--strike) * 100%) var(--thickness);
   
     transition: background-size .4s ease;
     font: 25px Arial;
     padding: 0 .2em;
   }
   .list__item:hover {
-    --strike: 1; /* "1" means "true" (show the strike line) */
+    --strike: 1;
     background-position-x: left;
   }

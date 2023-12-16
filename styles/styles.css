@@ -35,6 +35,7 @@ header {
 
 /* aqui elementos de la seccion "intro" */
 .intro {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,6 +144,7 @@ header {
 }
 /*------------------------------------ seccion de Works --------------------------------*/
 #works,#about,#contact{
+  height: 100%;
   padding: 3rem 6rem;
   background: linear-gradient(
     180deg,
@@ -165,7 +167,7 @@ header {
   font-weight: 400;
   line-height: normal;
   text-decoration-line: strikethrough;
-  transform: rotate(44deg);
+  transform: rotate(41deg);
   transform-origin: 0 0;
 }
 .works-container{
@@ -249,9 +251,6 @@ header {
     animation: rotar 8s infinite alternate-reverse ease-in-out;
 }
 /* ------------------------------------ABOUT---------------------------------------------- */
-#about{
-
-}
 .about-article .about-img{
   height: 20rem;
   padding:1rem;
@@ -303,11 +302,11 @@ header {
 }
 /* --------------------------------------------CONTACT------------------------- */
 .contac-text,.contact-iconos{
-  display: flex;
-    width: 100%;
-    height: 11rem;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   width: 100%;
+   height: 11rem;
+   justify-content: center;
+   align-items: center;
 }
 .contac-text p{
   display: inline-grid;
@@ -319,13 +318,56 @@ header {
   font-weight: 400;
   line-height: normal;
 }
-
+.cuadrados-animados{
+    width: 100%;
+    display: inline-flex;
+    z-index: -1;
+    justify-content: center;
+    position: relative;
+    height: 11rem;
+    align-items: center;
+}
+.cuadrados{
+  position: absolute;
+  background-color:#9D262DE0;
+  width: 5rem ;
+  height: 5rem;
+}
 .contact-iconos img{
   margin: 1rem;
-  transition: 1s;
+  transition: 0.5s;
   width: 4rem;
- height: 4rem;
+  height: 4rem;
 }
 .contact-iconos img:hover{
- opacity: 3;
+ opacity: 0.5;
+}
+.about-cuadrado__uno{
+  animation: moverAbout 10s infinite alternate ease-in-out;
+  top: 1rem;
+  transform: rotate(45deg);
+  left: 43rem;
+}
+.about-cuadrado__dos{
+  animation: moverAbout 15s infinite alternate ease-in-out;
+  top: 4rem;
+  border-radius: 50%;
+  left: 37rem;
+}
+.about-cuadrado__tres{
+  animation: moverAbout 20s infinite alternate ease-in-out;
+  top: 6rem;
+  left: 41rem;
+  transform: rotate(110deg);
+}
+.about-cuadrado__cuatro{
+  animation: moverAbout 25s infinite alternate ease-in-out;
+  top: 1rem;
+  transform: rotate(284deg);
+  left: 36rem;
+}
+footer{
+  background-color:#9d262d;
+  width: 100%;
+  height: 3rem;
 }
