@@ -4,6 +4,6 @@ body{
     font-family: 'Jost', sans-serif;
     color: #03081C;
     background: #DCDCDC;
-    box-sizing: border-box;
-    overflow: hidden scroll; 
+    /* box-sizing: border-box; */
+    /* overflow: hidden scroll;  */
 }

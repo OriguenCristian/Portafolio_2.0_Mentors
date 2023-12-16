@@ -3,11 +3,15 @@ html{
   scroll-behavior: smooth;
 }
 header {
+  top: 0px;
   width: 100vw;
   align-items: center;
   display: flex;
+  position: sticky;
   justify-content: space-around;
 }
+
+
 .menu {
   margin: 1rem;
 }
@@ -346,18 +350,18 @@ header {
   animation: moverAbout 10s infinite alternate ease-in-out;
   top: 1rem;
   transform: rotate(45deg);
-  left: 43rem;
+  left: 23rem;
 }
 .about-cuadrado__dos{
   animation: moverAbout 15s infinite alternate ease-in-out;
   top: 4rem;
   border-radius: 50%;
-  left: 37rem;
+  left: 27rem;
 }
 .about-cuadrado__tres{
   animation: moverAbout 20s infinite alternate ease-in-out;
   top: 6rem;
-  left: 41rem;
+  left: 30rem;
   transform: rotate(110deg);
 }
 .about-cuadrado__cuatro{
