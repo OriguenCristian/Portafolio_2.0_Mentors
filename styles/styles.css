@@ -188,7 +188,7 @@ header {
 }
 .box-one{
   box-shadow: 9px 1px 20px -12px rgba(0,0,0,0.73);
-  background-image: url(/assets/imagen-encriptador-progect.png);
+  background-image: url(./assets/imagen-encriptador-progect.png);
   background-size: cover;
   transition: all 1s linear; 
   overflow: hidden;
@@ -232,7 +232,7 @@ header {
 }
 .box-two{
   box-shadow: 9px 1px 20px -12px rgba(0,0,0,0.73);
-  background-image: url(/assets/ahoracadopage.jpeg);
+  background-image: url(./assets/ahoracadopage.jpeg);
   background-position: center;
   background-size: cover;
   transition: all 1s linear; 
